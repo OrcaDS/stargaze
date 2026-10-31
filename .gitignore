@@ -1,0 +1,39 @@
+# Added by repo-ready
+# Secrets and personal settings
+.env
+.env.*
+!.env.example
+.claude/settings.local.json
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+dist/
+build/
+
+# Data and models (rebuild from saved queries in git, or track with DVC)
+data/
+*.parquet
+*.csv
+*.duckdb
+mlruns/
+mlartifacts/
+models/*
+*.pkl
+*.joblib
+
+# Shipped to the demo host (sample: python -m stargaze.api); last, so nothing re-ignores them.
+!models/baseline.joblib
+!models/robust_trust.joblib
+!models/samples.parquet

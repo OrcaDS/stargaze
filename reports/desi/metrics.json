@@ -1,0 +1,185 @@
+{
+  "release": "DESI DR1",
+  "bands": "grz",
+  "desi": {
+    "baseline_f1": 0.4465995818550846,
+    "robust_f1": 0.503204373755313,
+    "trust": {
+      "coverage": 0.3921252796420582,
+      "macro_f1_answered": 0.6225578900333799,
+      "accuracy_answered": 0.9078046554084893,
+      "macro_f1_all": 0.503204373755313,
+      "uncertain": 0.6078747203579419,
+      "unusual_input": 0.0,
+      "ece_raw": 0.1562749869664748,
+      "ece_calibrated": 0.15516665422000095
+    },
+    "rows": 44700,
+    "class_counts": {
+      "GALAXY": 31276,
+      "STAR": 10255,
+      "QSO": 3169
+    },
+    "detail": {
+      "baseline": {
+        "macro_f1": 0.4465995818550846,
+        "per_class": {
+          "GALAXY": {
+            "precision": 0.8102106915088985,
+            "recall": 0.7758345056912649
+          },
+          "QSO": {
+            "precision": 0.0,
+            "recall": 0.0
+          },
+          "STAR": {
+            "precision": 0.463765168463155,
+            "recall": 0.6670892247684057
+          }
+        },
+        "confusion": [
+          [
+            24265,
+            0,
+            7011
+          ],
+          [
+            2270,
+            0,
+            899
+          ],
+          [
+            3414,
+            0,
+            6841
+          ]
+        ]
+      },
+      "robust": {
+        "macro_f1": 0.503204373755313,
+        "per_class": {
+          "GALAXY": {
+            "precision": 0.8227391125531234,
+            "recall": 0.5756490599820949
+          },
+          "QSO": {
+            "precision": 0.359636537541846,
+            "recall": 0.4745976648785106
+          },
+          "STAR": {
+            "precision": 0.327931312047223,
+            "recall": 0.5959044368600682
+          }
+        },
+        "confusion": [
+          [
+            18004,
+            1024,
+            12248
+          ],
+          [
+            1389,
+            1504,
+            276
+          ],
+          [
+            2490,
+            1654,
+            6111
+          ]
+        ]
+      }
+    }
+  },
+  "sdss_val_same_info_note": "SDSS val, tau/cutoff/blocked patterns tuned on these rows",
+  "sdss_val_same_info": {
+    "baseline_f1": 0.36514024585113636,
+    "robust_f1": 0.5932681176771812,
+    "trust": {
+      "coverage": 0.30859850690951446,
+      "macro_f1_answered": 0.7372911278678301,
+      "accuracy_answered": 0.9444968688341769,
+      "macro_f1_all": 0.5932681176771812,
+      "uncertain": 0.6914014930904855,
+      "unusual_input": 0.0,
+      "ece_raw": 0.09354718581523355,
+      "ece_calibrated": 0.08209201861833673
+    },
+    "rows": 37774,
+    "class_counts": {
+      "GALAXY": 22370,
+      "STAR": 8188,
+      "QSO": 7216
+    },
+    "detail": {
+      "baseline": {
+        "macro_f1": 0.36514024585113636,
+        "per_class": {
+          "GALAXY": {
+            "precision": 0.7261551916816481,
+            "recall": 0.6680822530174341
+          },
+          "QSO": {
+            "precision": 0.0,
+            "recall": 0.0
+          },
+          "STAR": {
+            "precision": 0.29488745419647533,
+            "recall": 0.6191988275525159
+          }
+        },
+        "confusion": [
+          [
+            14945,
+            0,
+            7425
+          ],
+          [
+            2518,
+            0,
+            4698
+          ],
+          [
+            3118,
+            0,
+            5070
+          ]
+        ]
+      },
+      "robust": {
+        "macro_f1": 0.5932681176771812,
+        "per_class": {
+          "GALAXY": {
+            "precision": 0.7969456132148979,
+            "recall": 0.6858292355833706
+          },
+          "QSO": {
+            "precision": 0.6375033342224593,
+            "recall": 0.6624168514412417
+          },
+          "STAR": {
+            "precision": 0.342312925170068,
+            "recall": 0.46091841719589643
+          }
+        },
+        "confusion": [
+          [
+            15342,
+            755,
+            6273
+          ],
+          [
+            1458,
+            4780,
+            978
+          ],
+          [
+            2451,
+            1963,
+            3774
+          ]
+        ]
+      }
+    }
+  }
+}
